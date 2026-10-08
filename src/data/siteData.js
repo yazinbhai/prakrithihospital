@@ -60,7 +60,7 @@ export const doctorsData = {
       phone: "+91-9995006118",
       formattedPhone: "+91 999 500 6118",
       specialty: "Naturopathy & Clinical Yoga",
-      image: "/assets/doctors/dr-tomson-tv.jpg"
+      image: "/assets/doctors/dr-tomson-tv.png"
     },
     {
       id: "doc-2",
