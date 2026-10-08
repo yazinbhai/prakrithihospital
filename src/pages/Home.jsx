@@ -39,7 +39,7 @@ export default function Home() {
 
         {/* Featured Treatments */}
         <TreatmentsGrid 
-          featuredIds={['yoga-meditation', 'weight-reduction', 'steam-bath', 'sun-bath', 'hydrotherapy', 'mud-wet-pack']} 
+          featuredIds={['sun-bath', 'cleansing-washes', 'physiotherapy', 'steam-bath', 'yoga-meditation', 'weight-reduction', 'hydrotherapy', 'mud-wet-pack']} 
         />
 
         {/* Call to Action Section */}

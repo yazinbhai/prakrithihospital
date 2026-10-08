@@ -61,28 +61,32 @@ export default function TreatmentsGrid({ limit, featuredIds }) {
             return (
               <div 
                 key={t.id}
-                className={`bg-emerald-50/40 rounded-2xl p-6 border border-emerald-100 shadow-soft hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full hover:-translate-y-1 group ${specialGridClass}`}
+                className={`bg-[#f2faf5] rounded-3xl p-6 sm:p-7 border border-[#d6f0e0] shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between h-full hover:-translate-y-1 group ${specialGridClass}`}
               >
-                <div className="flex-1 flex flex-col space-y-3">
-                  <div className="w-12 h-12 rounded-xl bg-forest text-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm shrink-0">
-                    <IconComp className="w-6 h-6 text-emerald-300" />
+                <div className="flex-1 flex flex-col">
+                  {/* Top Dark Green Rounded Icon */}
+                  <div className="w-[52px] h-[52px] rounded-2xl bg-[#0a3828] text-emerald-400 flex items-center justify-center mb-6 shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                    <IconComp className="w-6 h-6 stroke-[2.2]" />
                   </div>
 
-                  <div className="min-h-[48px] flex items-start">
-                    <h3 className="font-bold text-base text-emerald-950 group-hover:text-forest transition leading-snug">
+                  {/* Title Container - fixed height alignment across cards */}
+                  <div className="min-h-[56px] flex items-start mb-3">
+                    <h3 className="font-bold text-lg text-emerald-950 group-hover:text-forest transition-colors leading-snug tracking-tight">
                       {t.title}
                     </h3>
                   </div>
 
-                  <div className="min-h-[60px] flex items-start">
-                    <p className="text-xs text-emerald-900/80 leading-relaxed font-normal">
+                  {/* Short Description Container - fixed height alignment */}
+                  <div className="min-h-[72px] flex items-start mb-4">
+                    <p className="text-xs sm:text-[13px] text-emerald-800/80 leading-relaxed font-normal">
                       {t.shortDesc}
                     </p>
                   </div>
                 </div>
 
-                <div className="mt-auto pt-4 border-t border-emerald-200/60 min-h-[84px] flex items-start">
-                  <p className="text-[11px] text-emerald-700 font-semibold leading-relaxed">
+                {/* Horizontal Divider Line & Full Description aligned at bottom */}
+                <div className="mt-auto pt-5 border-t border-emerald-200/60 min-h-[96px] flex items-start">
+                  <p className="text-[12px] text-emerald-800 font-medium leading-relaxed">
                     {t.fullDesc}
                   </p>
                 </div>
