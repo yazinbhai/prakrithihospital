@@ -59,18 +59,37 @@ export default function ContactForm() {
     setSubmitStatus(null);
 
     try {
-      // Simulate asynchronous API endpoint call (replace this handler with actual fetch/Axios to backend)
-      await new Promise((resolve) => setTimeout(resolve, 1200));
-
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        address: '',
-        email: '',
-        phone: '',
-        comments: ''
+      const response = await fetch('https://formsubmit.co/ajax/drtomsontv@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `New Patient Enquiry from ${formData.name}`,
+          _template: 'table',
+          _captcha: 'false',
+          'Full Name': formData.name,
+          'Address / City': formData.address || 'N/A',
+          'Email Address': formData.email,
+          'Phone Number': formData.phone,
+          'Medical Enquiry / Comments': formData.comments
+        })
       });
-      setErrors({});
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          name: '',
+          address: '',
+          email: '',
+          phone: '',
+          comments: ''
+        });
+        setErrors({});
+      } else {
+        setSubmitStatus('error');
+      }
     } catch (error) {
       setSubmitStatus('error');
     } finally {
@@ -95,10 +114,10 @@ export default function ContactForm() {
         <div className="mb-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm space-y-1">
           <div className="flex items-center space-x-2 font-bold text-emerald-950">
             <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
-            <span>Enquiry Form Submitted (Demonstration State)</span>
+            <span>Enquiry Sent Successfully!</span>
           </div>
           <p className="text-xs text-emerald-800">
-            Thank you for your enquiry. Your message has been formatted locally. To receive live submissions, connect this form handler to your email or backend API.
+            Thank you for your enquiry. Your message has been sent directly to <strong>drtomsontv@gmail.com</strong>. Dr. Tomson T.V and our medical team will respond to you shortly.
           </p>
         </div>
       )}
@@ -107,7 +126,7 @@ export default function ContactForm() {
       {submitStatus === 'error' && (
         <div className="mb-6 p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-900 text-sm flex items-center space-x-2">
           <AlertCircle className="w-5 h-5 text-rose-600 shrink-0" />
-          <span>An error occurred while submitting your enquiry. Please try calling directly.</span>
+          <span>An error occurred while sending your enquiry. Please try calling +91-9995006118 directly.</span>
         </div>
       )}
 

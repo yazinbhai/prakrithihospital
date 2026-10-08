@@ -38,7 +38,8 @@ export const siteConfig = {
     landmarks: "Situated on Sophiya College Road, Perumbavoor, in Sophiya College Inn. Easily accessible from Kochi International Airport (COK) and major Ernakulam transport links.",
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=Prakrithi+Natural+Life,+Sophiya+College+Road,+Perumbavoor,+Keralam+683542",
     googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.568326490696!2d76.46795277503304!3d10.112815300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e3e8c11fcdb1%3A0xcf39292a0a5311c7!2sPrakrithi%20Natural%20Life!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin",
-    emailPlaceholder: "enquiry@prakrithihospital.org",
+    primaryEmail: "drtomsontv@gmail.com",
+    emailPlaceholder: "drtomsontv@gmail.com",
     operatingHours: "Open 7 Days a Week: 8:00 AM – 7:00 PM (In-patient care 24/7)"
   },
 
