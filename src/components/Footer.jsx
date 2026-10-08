@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-10 border-b border-emerald-900/80">
           
           {/* Column 1: Brand & Identity (4 Cols) */}
-          <div className="lg:col-span-4 space-y-4">
+          <div className="lg:col-span-4 space-y-4 flex flex-col items-center text-center">
             <Link to="/" className="inline-block group">
               <img 
                 src="/logo_final.png" 
@@ -27,7 +27,7 @@ export default function Footer() {
               &ldquo;{siteConfig.slogan}&rdquo;
             </p>
 
-            <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-emerald-900/80 border border-emerald-800 text-xs text-emerald-300">
+            <div className="inline-flex items-center justify-center space-x-2 px-3 py-1.5 rounded-lg bg-emerald-900/80 border border-emerald-800 text-xs text-emerald-300">
               <Shield className="w-4 h-4 text-emerald-400 shrink-0" />
               <span>Non-Profit Charitable Society Reg. No. {siteConfig.registrationNo}</span>
             </div>
