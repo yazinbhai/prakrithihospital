@@ -130,7 +130,7 @@ export default function SEO({ title, description, image }) {
           "name": "Where is Prakrithi Nature Cure Hospital located?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Prakrithi Nature Cure Hospital is located on Sophiya College Road, Perumbavoor, Ernakulam District, Kerala 683542, India (near Sophiya College & Sophiya College Inn)."
+            "text": "Prakrithi Nature Cure Hospital is located in Sophiya College Inn on Sophiya College Road, Perumbavoor, Ernakulam District, Kerala 683542, India."
           }
         },
         {

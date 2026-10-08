@@ -26,7 +26,7 @@ export default function Introduction() {
             </p>
 
             <p className="text-sm sm:text-base text-emerald-800/90 leading-relaxed">
-              Beautifully located on Sophiya College Road in Perumbavoor (near Sophiya College Inn), our hospital features an in-patient accommodation capacity of 20 beds and a compassionate team of {siteConfig.doctorsCount} experienced doctors and naturopathic specialists.
+              Beautifully located in Sophiya College Inn on Sophiya College Road in Perumbavoor, our hospital features an in-patient accommodation capacity of 20 beds and a compassionate team of {siteConfig.doctorsCount} experienced doctors and naturopathic specialists.
             </p>
 
             {/* Quick Feature Badges Grid */}

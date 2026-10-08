@@ -73,7 +73,7 @@ export default function MapSection() {
                   </div>
                   <div>
                     <h4 className="font-bold text-emerald-950">Local Landmark</h4>
-                    <p className="text-emerald-800 text-xs mt-0.5">Located on Sophiya College Road near Sophiya College Inn, Perumbavoor.</p>
+                    <p className="text-emerald-800 text-xs mt-0.5">Located in Sophiya College Inn on Sophiya College Road, Perumbavoor.</p>
                   </div>
                 </div>
 
