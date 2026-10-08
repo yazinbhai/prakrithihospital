@@ -20,7 +20,7 @@ export const siteConfig = {
     primaryPhone: "+91-9995006118",
     formattedPrimaryPhone: "+91 999 500 6118",
     secondaryPhones: [
-      "+91-9947534191",
+      "+91-7306432205",
       "+91-9961884994",
       "+91-484-2595176",
       "+91-484-2595177"
@@ -67,8 +67,8 @@ export const doctorsData = {
       name: "Dr. Sandhya Vijesh",
       qualification: "DNYS",
       role: "Senior Naturopathic Physician",
-      phone: "+91-9947534191",
-      formattedPhone: "+91 994 753 4191",
+      phone: "+91-7306432205",
+      formattedPhone: "+91 730 643 2205",
       specialty: "Dietary Therapy & Hydrotherapy",
       image: "/assets/doctors/dr-sandhya-vijesh.jpg"
     },
