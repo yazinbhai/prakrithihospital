@@ -15,14 +15,12 @@ export default function Footer() {
           
           {/* Column 1: Brand & Identity (4 Cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <Link to="/" className="inline-flex items-center space-x-3 group">
-              <div className="w-10 h-10 rounded-xl bg-emerald-800 text-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-                <Leaf className="w-6 h-6 text-emerald-300" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-white tracking-tight">Prakrithi</span>
-                <span className="text-xs font-semibold text-emerald-300 uppercase tracking-wide">Nature cure Hospital</span>
-              </div>
+            <Link to="/" className="inline-block group">
+              <img 
+                src="/logo_final.png" 
+                alt="Prakrithi Nature Cure Hospital" 
+                className="h-12 sm:h-14 w-auto object-contain bg-white/95 p-2 rounded-xl shadow-sm group-hover:scale-105 transition-transform"
+              />
             </Link>
             
             <p className="text-emerald-200/90 text-xs sm:text-sm italic font-medium leading-relaxed max-w-sm">

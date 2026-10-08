@@ -61,17 +61,11 @@ export default function Header() {
             className="flex items-center space-x-3 group focus:outline-none focus:ring-2 focus:ring-emerald-600 rounded-lg p-1"
             aria-label="Prakrithi Nature Cure Hospital Home"
           >
-            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-emerald-900 text-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-              <Leaf className="w-6 h-6 text-emerald-300" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-extrabold text-emerald-950 tracking-tight leading-none group-hover:text-emerald-800 transition">
-                Prakrithi
-              </span>
-              <span className="text-[11px] sm:text-xs font-semibold text-emerald-700 tracking-wide uppercase mt-0.5">
-                Nature cure Hospital
-              </span>
-            </div>
+            <img 
+              src="/logo_final.png" 
+              alt="Prakrithi Nature Cure Hospital Logo" 
+              className="h-11 sm:h-13 w-auto object-contain group-hover:scale-105 transition-transform"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}

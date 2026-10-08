@@ -54,15 +54,11 @@ export default function MobileMenu({ isOpen, onClose }) {
             {/* Header */}
             <div>
               <div className="p-5 flex items-center justify-between border-b border-emerald-100 bg-emerald-50/50">
-                <div className="flex items-center space-x-3">
-                  <div className="w-9 h-9 rounded-xl bg-forest flex items-center justify-center text-white font-bold text-lg shadow-sm">
-                    P
-                  </div>
-                  <div>
-                    <h2 className="font-bold text-base text-emerald-950 leading-tight">Prakrithi</h2>
-                    <p className="text-xs text-emerald-700 font-medium">Nature Cure Hospital</p>
-                  </div>
-                </div>
+                <img 
+                  src="/logo_final.png" 
+                  alt="Prakrithi Nature Cure Hospital" 
+                  className="h-10 w-auto object-contain"
+                />
                 <button
                   onClick={onClose}
                   className="p-2 rounded-lg text-emerald-900 hover:bg-emerald-100 focus:outline-none focus:ring-2 focus:ring-emerald-700 transition"
