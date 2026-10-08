@@ -63,26 +63,28 @@ export default function TreatmentsGrid({ limit, featuredIds }) {
                 key={t.id}
                 className={`bg-emerald-50/40 rounded-2xl p-6 border border-emerald-100 shadow-soft hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full hover:-translate-y-1 group ${specialGridClass}`}
               >
-                <div className="space-y-3">
-                  <div className="w-12 h-12 rounded-xl bg-forest text-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm">
+                <div className="flex-1 flex flex-col space-y-3">
+                  <div className="w-12 h-12 rounded-xl bg-forest text-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm shrink-0">
                     <IconComp className="w-6 h-6 text-emerald-300" />
                   </div>
 
-                  <div className="h-14 flex items-start">
+                  <div className="min-h-[48px] flex items-start">
                     <h3 className="font-bold text-base text-emerald-950 group-hover:text-forest transition leading-snug">
                       {t.title}
                     </h3>
                   </div>
 
-                  <div className="h-16 flex items-start">
+                  <div className="min-h-[60px] flex items-start">
                     <p className="text-xs text-emerald-900/80 leading-relaxed font-normal">
                       {t.shortDesc}
                     </p>
                   </div>
                 </div>
 
-                <div className="pt-4 mt-4 text-[11px] text-emerald-700 font-semibold border-t border-emerald-200/60">
-                  {t.fullDesc}
+                <div className="mt-auto pt-4 border-t border-emerald-200/60 min-h-[84px] flex items-start">
+                  <p className="text-[11px] text-emerald-700 font-semibold leading-relaxed">
+                    {t.fullDesc}
+                  </p>
                 </div>
               </div>
             );
